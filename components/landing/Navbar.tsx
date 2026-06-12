@@ -36,7 +36,7 @@ export default function Navbar() {
         <div className="absolute bottom-0 left-0 right-0 h-px bg-white/[0.06] pointer-events-none" />
       )}
 
-      <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-6 h-[68px] flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-0 text-[17px] font-semibold tracking-tight select-none">
           <span className="text-text-primary">Build</span>
