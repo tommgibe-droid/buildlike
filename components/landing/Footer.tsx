@@ -6,14 +6,6 @@ const links = {
     { label: "Changelog", href: "#" },
     { label: "Roadmap", href: "#" },
   ],
-  Founders: [
-    { label: "Jeff Bezos", href: "#" },
-    { label: "Alex Hormozi", href: "#" },
-    { label: "Sam Altman", href: "#" },
-    { label: "Paul Graham", href: "#" },
-    { label: "Naval Ravikant", href: "#" },
-    { label: "Reid Hoffman", href: "#" },
-  ],
   Company: [
     { label: "About", href: "#" },
     { label: "Blog", href: "#" },

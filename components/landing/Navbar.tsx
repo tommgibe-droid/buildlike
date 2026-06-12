@@ -19,7 +19,6 @@ export default function Navbar() {
 
   const links = [
     { label: "How it works", href: "#how-it-works" },
-    { label: "Founders", href: "#founders" },
   ];
 
   return (
