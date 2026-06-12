@@ -4,7 +4,6 @@ import Marquee from "@/components/landing/Marquee";
 import Comparison from "@/components/landing/Comparison";
 import HowItWorks from "@/components/landing/HowItWorks";
 import FoundersGrid from "@/components/landing/FoundersGrid";
-import Pricing from "@/components/landing/Pricing";
 import Waitlist from "@/components/landing/Waitlist";
 import FAQ from "@/components/landing/FAQ";
 import Footer from "@/components/landing/Footer";
@@ -19,7 +18,6 @@ export default function LandingPage() {
       <HowItWorks />
       <Marquee />
       <FoundersGrid />
-      <Pricing />
       <Waitlist />
       <FAQ />
       <Footer />
