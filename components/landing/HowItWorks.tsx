@@ -2,8 +2,6 @@
 
 import { motion } from "framer-motion";
 
-const WAITLIST_MODE = process.env.NEXT_PUBLIC_WAITLIST_MODE === "true";
-
 const steps = [
   {
     num: "01",
