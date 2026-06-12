@@ -43,11 +43,11 @@ export default function Waitlist() {
   };
 
   return (
-    <section className="relative py-32 overflow-hidden" style={{ background: "#070B14" }}>
-
+    <section className="relative py-48 overflow-hidden" style={{ background: "#040E1C" }}>
+      <div className="absolute top-0 left-0 right-0 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(59,130,246,0.2), transparent)" }} />
       <div
         className="pointer-events-none absolute inset-0"
-        style={{ background: "radial-gradient(ellipse 55% 45% at 50% 100%, rgba(59,130,246,0.06) 0%, transparent 70%)" }}
+        style={{ background: "radial-gradient(ellipse 70% 60% at 50% 50%, rgba(59,130,246,0.1) 0%, transparent 70%)" }}
       />
 
       <div className="relative z-10 max-w-lg mx-auto px-5 text-center">

@@ -9,17 +9,16 @@ export default function FAQ() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section className="relative py-28 overflow-hidden" style={{ background: "#060910" }}>
+    <section className="relative py-20 overflow-hidden" style={{ background: "#030508" }}>
       <div className="relative z-10 max-w-2xl mx-auto px-5">
         <motion.div
           initial={{ opacity: 0, y: 12 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="mb-12"
+          className="mb-10"
         >
-          <p className="text-[11px] font-medium text-white/25 uppercase tracking-[0.15em] mb-4">FAQ</p>
-          <h2 className="text-[2.5rem] md:text-[3.2rem] font-bold tracking-[-0.03em] text-white leading-[1.05]">
+          <h2 className="text-[2rem] md:text-[2.5rem] font-bold tracking-[-0.03em] text-white/70 leading-[1.05]">
             Questions.
           </h2>
         </motion.div>

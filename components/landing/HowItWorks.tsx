@@ -36,7 +36,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="relative py-28 overflow-hidden" style={{ background: "#070B14" }}>
+    <section id="how-it-works" className="relative py-36 overflow-hidden" style={{ background: "#070B14" }}>
       <div className="relative z-10 max-w-6xl mx-auto px-5">
 
         {/* Header */}
@@ -45,13 +45,13 @@ export default function HowItWorks() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="mb-20"
+          className="mb-24"
         >
-          <p className="text-[11px] font-medium text-white/25 uppercase tracking-[0.15em] mb-4">How it works</p>
-          <h2 className="text-[2.5rem] md:text-[3.2rem] font-bold tracking-[-0.03em] leading-[1.05] text-white">
+          <p className="text-[11px] font-medium text-white/20 uppercase tracking-[0.15em] mb-5">How it works</p>
+          <h2 className="text-[3.5rem] md:text-[5.5rem] font-bold tracking-[-0.04em] leading-[1.0] text-white">
             Three steps.
             <br />
-            <span className="text-white/25">One sourced answer.</span>
+            <span className="text-white/18">One sourced answer.</span>
           </h2>
         </motion.div>
 

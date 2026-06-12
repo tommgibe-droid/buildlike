@@ -6,7 +6,9 @@ const question = "Should I raise my prices?";
 
 export default function Comparison() {
   return (
-    <section className="relative py-28 overflow-hidden" style={{ background: "#060910" }}>
+    <section className="relative py-36 overflow-hidden" style={{ background: "#030508" }}>
+      <div className="pointer-events-none absolute inset-0"
+        style={{ background: "radial-gradient(ellipse 60% 50% at 50% 0%, rgba(59,130,246,0.04) 0%, transparent 65%)" }} />
       <div className="relative z-10 max-w-5xl mx-auto px-5">
 
         <motion.div
@@ -14,16 +16,15 @@ export default function Comparison() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="mb-14"
+          className="mb-14 text-center"
         >
-          <p className="text-[11px] font-medium text-white/25 uppercase tracking-[0.15em] mb-4">The difference</p>
-          <h2 className="text-[2.5rem] md:text-[3.2rem] font-bold tracking-[-0.03em] text-white leading-[1.05] mb-4">
+          <h2 className="text-[2.8rem] md:text-[4.2rem] font-bold tracking-[-0.04em] text-white leading-[1.02] mb-5">
             Same question.
             <br />
-            <span className="text-white/25">Very different answer.</span>
+            <span className="text-white/20">Very different answer.</span>
           </h2>
-          <p className="text-[14px] text-white/35 max-w-md">
-            The difference isn&apos;t the question. It&apos;s what you get back — and whether you can trust it.
+          <p className="text-[14px] text-white/30 max-w-sm mx-auto">
+            The difference isn&apos;t the question — it&apos;s what you get back, and whether you can trust it.
           </p>
         </motion.div>
 

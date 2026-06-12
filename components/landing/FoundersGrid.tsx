@@ -18,7 +18,10 @@ const stats = [
 
 export default function FoundersGrid() {
   return (
-    <section id="founders" className="relative py-28 overflow-hidden" style={{ background: "#060910" }}>
+    <section id="founders" className="relative py-28 overflow-hidden" style={{ background: "#05091A" }}>
+      <div className="pointer-events-none absolute inset-0"
+        style={{ background: "radial-gradient(ellipse 70% 40% at 50% 0%, rgba(59,130,246,0.07) 0%, transparent 60%)" }} />
+
       <div className="relative z-10 max-w-6xl mx-auto px-5">
 
         <motion.div

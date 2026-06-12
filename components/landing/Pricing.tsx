@@ -16,7 +16,8 @@ export default function Pricing() {
   };
 
   return (
-    <section id="pricing" className="relative py-28 overflow-hidden" style={{ background: "#070B14" }}>
+    <section id="pricing" className="relative py-36 overflow-hidden" style={{ background: "#040709" }}>
+      <div className="absolute top-0 left-0 right-0 h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(59,130,246,0.18), transparent)" }} />
       <div className="relative z-10 max-w-5xl mx-auto px-5">
 
         <motion.div
