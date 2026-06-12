@@ -36,15 +36,6 @@ export const founders = [
     tags: ["Product", "Fundraising", "Essays"],
   },
   {
-    id: "musk",
-    name: "Elon Musk",
-    initials: "EM",
-    title: "CEO, Tesla & SpaceX",
-    color: "from-red-500 to-red-700",
-    quote: "When something is important enough, you do it even if the odds are not in your favor.",
-    tags: ["Execution", "First principles", "Moonshots"],
-  },
-  {
     id: "naval",
     name: "Naval Ravikant",
     initials: "NR",

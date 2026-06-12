@@ -8,12 +8,12 @@ const links = {
     { label: "Roadmap", href: "#" },
   ],
   Founders: [
-    { label: "Jeff Bezos", href: "/app" },
-    { label: "Alex Hormozi", href: "/app" },
-    { label: "Sam Altman", href: "/app" },
-    { label: "Paul Graham", href: "/app" },
-    { label: "Naval Ravikant", href: "/app" },
-    { label: "Elon Musk", href: "/app" },
+    { label: "Jeff Bezos", href: "#" },
+    { label: "Alex Hormozi", href: "#" },
+    { label: "Sam Altman", href: "#" },
+    { label: "Paul Graham", href: "#" },
+    { label: "Naval Ravikant", href: "#" },
+    { label: "Reid Hoffman", href: "#" },
   ],
   Company: [
     { label: "About", href: "#" },
@@ -72,7 +72,7 @@ export default function Footer() {
         {/* Bottom row */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-6 border-t border-white/[0.04]">
           <p className="text-[12px] text-white/20">
-            © 2024 BuildLike. All rights reserved.
+            © 2026 BuildLike. All rights reserved.
           </p>
           <div className="flex items-center gap-5">
             {["Twitter", "GitHub", "LinkedIn"].map(s => (

@@ -1,9 +1,9 @@
 const items = [
   "Jeff Bezos", "Alex Hormozi", "Sam Altman", "Paul Graham",
-  "Naval Ravikant", "Elon Musk", "12,000+ source documents",
+  "Naval Ravikant", "Reid Hoffman", "12,000+ source documents",
   "Primary sources only", "Cited every time", "No hallucinations",
   "Jeff Bezos", "Alex Hormozi", "Sam Altman", "Paul Graham",
-  "Naval Ravikant", "Elon Musk", "12,000+ source documents",
+  "Naval Ravikant", "Reid Hoffman", "12,000+ source documents",
   "Primary sources only", "Cited every time", "No hallucinations",
 ];
 
