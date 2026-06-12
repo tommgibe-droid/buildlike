@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useRouter } from "next/navigation";
-import { ArrowUp, ArrowRight, Check } from "lucide-react";
+import { ArrowUp, Check } from "lucide-react";
 import { supabase } from "@/lib/supabase";
 
 const WAITLIST_MODE = process.env.NEXT_PUBLIC_WAITLIST_MODE === "true";
@@ -150,32 +150,31 @@ export default function Hero() {
                   {submitted ? (
                     <motion.div
                       key="success"
-                      initial={{ opacity: 0, scale: 0.95, y: 4 }}
-                      animate={{ opacity: 1, scale: 1, y: 0 }}
-                      className="w-full flex items-center justify-center gap-2.5 px-5 py-3.5 rounded-2xl border border-white/[0.08] text-sm text-white/60"
+                      initial={{ opacity: 0, y: 4 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.3 }}
+                      className="w-full flex items-center justify-center gap-2.5 px-5 py-3.5 rounded-2xl border border-white/[0.06] text-sm text-white/45"
                       style={{ background: "rgba(13,18,32,0.7)" }}
                     >
-                      <span className="w-4 h-4 rounded-full bg-green-400/80 flex items-center justify-center shrink-0">
-                        <Check size={10} strokeWidth={3} className="text-black" />
+                      <span className="w-3.5 h-3.5 rounded-full bg-green-400/60 flex items-center justify-center shrink-0">
+                        <Check size={9} strokeWidth={3} className="text-black" />
                       </span>
-                      You&apos;re on the list! We&apos;ll email you when BuildLike launches.
+                      We&apos;ll be in touch.
                     </motion.div>
                   ) : duplicate ? (
                     <motion.div
                       key="duplicate"
-                      initial={{ opacity: 0, scale: 0.95 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      className="w-full flex items-center justify-center gap-2.5 px-5 py-3.5 rounded-2xl border border-accent/20 text-sm text-accent/60"
+                      initial={{ opacity: 0, y: 4 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.3 }}
+                      className="w-full flex items-center justify-center px-5 py-3.5 rounded-2xl border border-white/[0.06] text-sm text-white/35"
                       style={{ background: "rgba(13,18,32,0.7)" }}
                     >
-                      <span className="w-4 h-4 rounded-full bg-accent/20 flex items-center justify-center shrink-0">
-                        <Check size={10} strokeWidth={3} className="text-accent/70" />
-                      </span>
-                      You&apos;re already on the list!
+                      Already registered.
                     </motion.div>
                   ) : (
                     <motion.div key="form" className="w-full">
-                      <div className="p-px rounded-2xl" style={{ background: "linear-gradient(135deg, rgba(59,130,246,0.3) 0%, rgba(255,255,255,0.08) 100%)" }}>
+                      <div className="p-px rounded-2xl" style={{ background: "linear-gradient(135deg, rgba(255,255,255,0.09) 0%, rgba(59,130,246,0.1) 100%)" }}>
                         <form
                           onSubmit={handleWaitlistSubmit}
                           className="flex gap-2 p-1.5 rounded-[15px] backdrop-blur-xl"
@@ -187,17 +186,17 @@ export default function Hero() {
                             onChange={e => setEmail(e.target.value)}
                             placeholder="your@email.com"
                             required
-                            className="flex-1 min-w-0 px-3.5 py-2.5 bg-transparent text-[15px] text-white/85 placeholder:text-white/22 outline-none"
+                            className="flex-1 min-w-0 px-4 py-2.5 bg-transparent text-[14px] text-white/80 placeholder:text-white/18 outline-none"
                           />
                           <button
                             type="submit"
                             disabled={submitting}
-                            className="flex items-center gap-2 px-4 py-2 rounded-xl bg-accent hover:bg-blue-500 text-white text-sm font-medium transition-all duration-150 shrink-0 disabled:opacity-60"
+                            className="px-5 py-2.5 rounded-xl bg-accent hover:bg-blue-500 text-white text-[13px] font-medium tracking-tight transition-all duration-150 shrink-0 disabled:opacity-50"
                           >
                             {submitting ? (
-                              <span className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                              <span className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin block" />
                             ) : (
-                              <>Join waitlist <ArrowRight size={13} /></>
+                              "Notify me"
                             )}
                           </button>
                         </form>
@@ -206,15 +205,10 @@ export default function Hero() {
                   )}
                 </AnimatePresence>
 
-                {/* Live counter */}
-                <p className="text-[12px] text-white/28">
-                  {count === null ? (
-                    <span className="opacity-0">loading</span>
-                  ) : count > 0 ? (
-                    <>🔥 <span className="text-white/45 font-medium">{count.toLocaleString()}</span> founders already joined</>
-                  ) : (
-                    "Be one of the first"
-                  )}
+                <p className="text-[11px] text-white/20">
+                  {count !== null && count > 0
+                    ? `${count.toLocaleString()} people signed up`
+                    : "No spam."}
                 </p>
               </div>
             ) : (

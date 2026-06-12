@@ -123,7 +123,7 @@ export default function HowItWorks() {
             href={WAITLIST_MODE ? "#waitlist-form" : "/app"}
             className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-xl bg-accent hover:bg-blue-500 text-white text-sm font-medium transition-all duration-150"
           >
-            {WAITLIST_MODE ? "Join the waitlist" : "Try it now — free"}
+            {WAITLIST_MODE ? "Get notified" : "Try it now — free"}
           </a>
         </motion.div>
       </div>

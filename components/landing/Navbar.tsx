@@ -63,7 +63,7 @@ export default function Navbar() {
               href="#waitlist-form"
               className="px-4 py-1.5 text-sm bg-accent hover:bg-blue-500 text-white rounded-lg font-medium transition-all duration-150"
             >
-              Join waitlist
+              Get notified
             </a>
           ) : (
             <>
@@ -121,7 +121,7 @@ export default function Navbar() {
                   onClick={() => setMobileOpen(false)}
                   className="py-2.5 px-4 text-sm bg-accent hover:bg-blue-500 text-white rounded-lg font-medium text-center transition-all duration-150"
                 >
-                  Join waitlist
+                  Get notified
                 </a>
               ) : (
                 <>

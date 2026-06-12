@@ -120,7 +120,7 @@ export default function Pricing() {
                       : "bg-white/[0.04] hover:bg-white/[0.07] text-white/45 hover:text-white/70 border border-white/[0.07]"
                   }`}
                 >
-                  {WAITLIST_MODE ? "Join waitlist" : plan.cta}
+                  {WAITLIST_MODE ? "Get notified" : plan.cta}
                 </a>
               </div>
             </motion.div>
