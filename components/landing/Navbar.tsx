@@ -59,7 +59,7 @@ export default function Navbar() {
           {WAITLIST_MODE ? (
             <a
               href="#waitlist-form"
-              className="px-4 py-1.5 text-sm bg-accent hover:bg-blue-500 text-white rounded-lg font-medium transition-all duration-150"
+              className="px-4 py-1.5 text-sm bg-accent hover:bg-blue-500 text-white rounded-lg font-medium transition-all duration-150 hover:scale-[1.03] active:scale-[0.97]"
             >
               Get notified
             </a>
@@ -73,7 +73,7 @@ export default function Navbar() {
               </Link>
               <Link
                 href="/app"
-                className="px-4 py-1.5 text-sm bg-accent hover:bg-blue-500 text-white rounded-lg font-medium transition-all duration-150"
+                className="px-4 py-1.5 text-sm bg-accent hover:bg-blue-500 text-white rounded-lg font-medium transition-all duration-150 hover:scale-[1.03] active:scale-[0.97]"
               >
                 Start free trial
               </Link>

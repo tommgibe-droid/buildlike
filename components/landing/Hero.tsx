@@ -66,9 +66,9 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden" style={{ background: "#070B14" }}>
 
-      {/* Subtle top glow */}
-      <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[500px]"
-        style={{ background: "radial-gradient(ellipse 70% 60% at 50% 0%, rgba(59,130,246,0.1) 0%, transparent 70%)" }} />
+      {/* Animated top glow */}
+      <div className="orb-animate pointer-events-none absolute top-0 left-1/2 w-[900px] h-[500px]"
+        style={{ background: "radial-gradient(ellipse 70% 60% at 50% 0%, rgba(59,130,246,0.12) 0%, transparent 70%)" }} />
 
       {/* Above fold */}
       <div className="relative z-10 min-h-screen flex flex-col items-center justify-center w-full px-5">
@@ -188,7 +188,7 @@ export default function Hero() {
                           <button
                             type="submit"
                             disabled={submitting}
-                            className="px-5 py-2.5 rounded-xl bg-accent hover:bg-blue-500 text-white text-[13px] font-medium tracking-tight transition-all duration-150 shrink-0 disabled:opacity-50"
+                            className="px-5 py-2.5 rounded-xl bg-accent hover:bg-blue-500 text-white text-[13px] font-medium tracking-tight transition-all duration-150 shrink-0 disabled:opacity-50 hover:scale-[1.02] active:scale-[0.97]"
                           >
                             {submitting ? (
                               <span className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin block" />
@@ -210,7 +210,7 @@ export default function Hero() {
               </div>
             ) : (
               <div className="flex items-center gap-4 justify-center">
-                <a href="/app" className="px-6 py-2.5 rounded-full bg-accent hover:bg-blue-500 text-white text-sm font-medium transition-all duration-150">
+                <a href="/app" className="px-6 py-2.5 rounded-full bg-accent hover:bg-blue-500 text-white text-sm font-medium transition-all duration-150 hover:scale-[1.03] active:scale-[0.97]" style={{ display: "inline-block" }}>
                   Start free trial
                 </a>
                 <a href="#how-it-works" className="text-sm text-white/35 hover:text-white/60 transition-colors">

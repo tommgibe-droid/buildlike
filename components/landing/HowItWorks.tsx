@@ -152,7 +152,7 @@ export default function HowItWorks() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.08, duration: 0.4 }}
-                className="flex gap-4 px-5 py-4 rounded-2xl border border-white/[0.05]"
+                className="flex gap-4 px-5 py-4 rounded-2xl border border-white/[0.05] transition-all duration-200 hover:border-white/[0.09] hover:bg-white/[0.03]"
                 style={{ background: "rgba(255,255,255,0.02)" }}
               >
                 <span className="text-[11px] text-accent/40 font-mono mt-0.5 shrink-0">0{i + 1}</span>
